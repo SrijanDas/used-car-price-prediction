@@ -91,6 +91,19 @@
     {% if prediction_text %}
 
     <div class="alert alert-primary my-3" role="alert">
+        <h5>Car Details: </h5>
+        <hr>
+
+        <p>Year: {{car_details.year}}</p>
+        <p>Price: {{car_details.price}}</p>
+        <p>KM Driven: {{car_details.kms}}</p>
+        <p>No of Owners: {{car_details.owner}}</p>
+        <p>Fuel Type: {{car_details.fuel_type}}</p>        
+        <p>Seller Type: {{car_details.seller}}</p>
+        <p>Transmission: {{car_details.trans}}</p>
+
+        <hr>
+    
         <h3>{{prediction_text}}</h3>
     </div>
 
