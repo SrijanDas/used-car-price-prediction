@@ -1,3 +1,6 @@
 .idea
 .ipynb_checkpoints
 requirements.txt
+.vscode
+__pycache__
+venv
