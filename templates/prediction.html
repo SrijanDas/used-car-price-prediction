@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {%block content%} {% if prediction_text %}
+
+<div class="alert alert-primary my-3" role="alert">
+  <h5>Car Details:</h5>
+  <hr />
+
+  <p><b>Year of purchase:</b> {{car_details.year}}</p>
+  <p><b>KM Driven:</b> {{car_details.kms}}</p>
+  <p><b>Price:</b> {{car_details.price}}</p>
+  <p><b>No of Owners:</b> {{car_details.owner}}</p>
+  <p><b>Fuel Type:</b> {{car_details.fuel_type}}</p>
+  <p><b>Seller Type:</b> {{car_details.seller}}</p>
+  <p><b>Transmission:</b> {{car_details.trans}}</p>
+
+  <hr />
+
+  <h3>{{prediction_text}}</h3>
+</div>
+<button id="resetBtn" class="btn btn-light">Reset</button>
+{% endif %} {%endblock%}

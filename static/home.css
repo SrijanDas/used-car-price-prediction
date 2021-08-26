@@ -1,0 +1,8 @@
+#navbarBrandContainer {
+  justify-content: center;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
