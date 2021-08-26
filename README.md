@@ -25,25 +25,25 @@ Webapp - https://used-car-price-predic.herokuapp.com/
 Clone the project
 
 ```bash
-  https://github.com/SrijanDas/used-car-price-prediction.git
+https://github.com/SrijanDas/used-car-price-prediction.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd used-car-price-prediction
+cd used-car-price-prediction
 ```
 
 Install dependencies
 
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Start the server
 
 ```bash
-  python app.py
+python app.py
 ```
 
 Go to your browser and type `http://127.0.0.1:5000/` in the address bar. Hurray! That's it.
