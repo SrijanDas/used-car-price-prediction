@@ -71,7 +71,7 @@ Then converted categorical variables into dummy/indicator variables. For more in
 
 ### Model Building, Training and Testing
 
-Implemented different algorithms like Linear Regression, Ridge Regression and Random Forest to predict the car price and achieved mse of 0.98 with Random Forest. Finally selected the **Random Forest Regression** model for deployment. For more info check this [Jupyter NoteBook](https://github.com/SrijanDas/used-car-price-prediction/blob/main/model/used_car_price_prediction.ipynb)
+Implemented different algorithms like Linear Regression, Ridge Regression and Random Forest to predict the car price and achieved **mse of 0.98** with Random Forest. Finally selected the **Random Forest Regression** model for deployment. For more info check this [Jupyter NoteBook](https://github.com/SrijanDas/used-car-price-prediction/blob/main/model/used_car_price_prediction.ipynb)
 
 ### Webapp Building
 
