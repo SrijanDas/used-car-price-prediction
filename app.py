@@ -67,13 +67,13 @@ def predict():
         output = round(prediction[0], 2)
 
         if output < 0:
-            return render_template('home.html', prediction_texts="Sorry, we cannot predict the price.")
+            return render_template('prediction.html', prediction_texts="Sorry, we cannot predict the price.")
         else:
-            return render_template('home.html', prediction_text="Selling Price: {}".format(output),
+            return render_template('prediction.html', prediction_text="Selling Price: {}".format(output),
                                    car_details=car_details)
     else:
         return render_template('home.html')
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)

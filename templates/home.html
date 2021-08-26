@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {%block content%}
 
-<div class="container-fluid">
-  <form action="{{ url_for('predict')}}" method="post">
+<div id="content" class="container-fluid">
+  <form id="form" action="{{ url_for('predict')}}" method="post">
     <div class="row g-3 align-items-center my-3">
       <div class="col-auto">
-        <h3 class="">Year</h3>
+        <h3 class="">Year of Purchase</h3>
       </div>
       <div class="col-auto">
         <input class="form-control" id="first" name="Year" type="number" />
@@ -58,7 +58,7 @@
 
     <div class="row g-3 align-items-center my-3">
       <div class="col-auto">
-        <h3 class="">What Is the Fuel type?</h3>
+        <h3 class="">What is the Fuel type?</h3>
       </div>
       <div class="col-auto">
         <select
@@ -111,33 +111,11 @@
       </div>
     </div>
     <div class="d-grid gap-2">
-      <button id="sub" type="submit" class="btn btn-primary btn-lg">
+      <button id="calculateBtn" type="submit" class="btn btn-primary btn-lg">
         Calculate the Price
       </button>
     </div>
   </form>
-
-  {% if prediction_text %}
-
-  <div class="alert alert-primary my-3" role="alert">
-    <h5>Car Details:</h5>
-    <hr />
-
-    <p><b>Year:</b> {{car_details.year}}</p>
-    <p><b>KM Driven:</b> {{car_details.kms}}</p>
-    <p><b>Price:</b> {{car_details.price}}</p>
-    <p><b>No of Owners:</b> {{car_details.owner}}</p>
-    <p><b>Fuel Type:</b> {{car_details.fuel_type}}</p>
-    <p><b>Seller Type:</b> {{car_details.seller}}</p>
-    <p><b>Transmission:</b> {{car_details.trans}}</p>
-
-    <hr />
-
-    <h3>{{prediction_text}}</h3>
-  </div>
-  <button onclick="window.location.href = '/' " class="btn btn-light">
-    Reset
-  </button>
-  {% endif %}
 </div>
+
 {%endblock%}
